@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_splash"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.aruna.covidtracker.main.DashboardFragment"
+        android:label="CovidTracker"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_areaWiseTrackingFragment"
+            app:destination="@id/areaWiseTrackingFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_out_from_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_out_from_right" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_surveyFragment"
+            app:destination="@id/surveyFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_out_from_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_out_from_right" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_infoFragment"
+            app:destination="@id/infoFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_out_from_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_out_from_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/areaWiseTrackingFragment"
+        android:name="com.aruna.covidtracker.tracking.AreaWiseTrackingFragment"
+        android:label="Area Wise Tracking"
+        tools:layout="@layout/fragment_area_wise_tracking" />
+    <fragment
+        android:id="@+id/surveyFragment"
+        android:name="com.aruna.covidtracker.survey.SurveyFragment"
+        android:label="Quick Survey"
+        tools:layout="@layout/fragment_survey" >
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.aruna.covidtracker.main.InfoFragment"
+        android:label="About this app"
+        tools:layout="@layout/fragment_info" />
+
+</navigation>

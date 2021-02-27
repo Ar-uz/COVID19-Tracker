@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.InfoFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_unsafe"
+                android:padding="16dp"
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:text="This app is very useful for tracking COVID-19 area wise. You can also take a short survey to identify COVID-19 symptoms and calculate your risk of infection."
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/work_sans_medium"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Track COVID-19 area-wise: Use the area-wise tracking options from dashboard to get the latest info on the spread of the virus. You can see how many people are infected, recovered or deceased in a particular area."
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/work_sans_medium"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:src="@drawable/ic_area_track"
+                android:padding="16dp"
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic__17_clipboard"
+                android:padding="16dp"
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:text="Take a quick survey: Use the quick survey option from dashboard to take a short questionnaire and the apps AI will show the risk of infection based on the responses. If you believe you have some symptoms or you were in contact with an infected person, this app will help you."
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/work_sans_medium"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Stay updated about the patients near you: This app keeps on updating the number of active cases in your locality using GPS. The app will also notify you if the number of cases in your area go above the danger level."
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/work_sans_medium"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:src="@drawable/ic__35_protection"
+                android:padding="16dp"
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

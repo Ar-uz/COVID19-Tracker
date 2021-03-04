@@ -8,10 +8,6 @@ import com.aruna.covidtracker.R
 
 class TrackingService : Service() {
 
-    override fun onCreate() {
-        super.onCreate()
-    }
-
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         val notification = NotificationCompat.Builder(this, "100")
             .setContentTitle("COVID-19 Tracker")
@@ -28,7 +24,4 @@ class TrackingService : Service() {
         return null
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-    }
 }
